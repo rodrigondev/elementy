@@ -2,47 +2,46 @@ body{
     font-family: 'Open Sans',Arial, Helvetica, sans-serif;
 }
 
-header{
+.header{
     display: flex;
     justify-content: center;
     height: 82px;
 }
 
-.container{
+.header__container{
     width: 1290px;
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
+.header__logo{
     display: flex;
     align-items: center;
     padding-top: 10px;
 }
 
-.logo img{
+.header__logo img{
     width: 142px;
     height: 42px;
 }
 
-.menu{
+.header__menu{
     display: flex;
     align-items: center;
     padding-top: 10px;
 }
 
-nav ul,
-nav li{
+.navbar ul, li{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul{
+.navbar ul{
     display: flex;
 }
 
-nav a{
+.navbar--link{
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -50,11 +49,13 @@ nav a{
     font-size: 16px;
 }
 
-nav a:hover{
+.navbar--link:hover{
     border-bottom: 2px solid #000;
 }
 
-#banner{
+/*aqui termina a parte do menu*/
+
+.bannerprincipal{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -64,18 +65,20 @@ nav a:hover{
     height: 600px;
 }
 
-.tit1, .tit2, .play{
+.bannerprincipal__title1,
+.bannerprincipal__title2,
+.bannerprincipal__play{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.tit1{
+.bannerprincipal__title1{
     font-size: 28px;
     color: #fff;
 }
 
-.tit2{
+.bannerprincipal__title2{
     margin-top: 8px;
     text-transform: uppercase;
     font-weight: bold;
@@ -83,52 +86,46 @@ nav a:hover{
     color: #fff;
 }
 
-.play img{
+.bannerprincipal__play img{
     margin-top: 20px;
     width: 170px;
     height: 100px;
 }
 
-.container1{
-    width: 1170px;
-    display: flex;
-    justify-content: space-between;
-}
+/*aqui termina o banner principal*/
 
-.creative{
+.wecreative{
     margin-top: 110px;
     display: flex;
     justify-content: center;
     height: 400px;
 }
 
-.conteudo1{
+.wecreative__container{
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creativecontainer{
     width: 780px;
     font-size: 30px;
     color: #323336;
 }
 
-.banner1{
-    display: flex;
-    justify-content: center;
-    width: 390px;
-    height: 405px;
-    margin-top: 20px;
-}
-
-.conteudo1 .title{
+.creativecontainer__title{
     margin-top: -20px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.conteudo1 .conteudo{
+.creativecontainer__conteudo{
     display: flex;
     flex-wrap: wrap; 
     height: 125px;
 }
 
-.conteudo1 .conteudo .box1{
+.creativecontainer__conteudo__box{
     display: flex;
     align-items: center;
     width: 390px;
@@ -136,17 +133,38 @@ nav a:hover{
     font-size: 22px;
 }
 
-.conteudo1 .conteudo .box1 img{
+.creativecontainer__conteudo__box img{
     width: 30px;
     height: 30px;
     padding-left: 12px;
 }
 
-.conteudo1 .conteudo .box1 p{
+.creativecontainer__conteudo__box p{
     padding-left: 10px;
 }
 
-.titlework{
+.firstbanner{
+    display: flex;
+    justify-content: center;
+    width: 390px;
+    height: 405px;
+    margin-top: 20px;
+}
+
+/*aqui termina o primeiro conteudo*/
+
+
+.titleworks{
+    background-color: #eee;
+    margin-top: 24px;
+}
+
+.titleworks__display{
+    display: flex;
+    justify-content: center;
+}
+
+.titleworks__title{
     width: 1200px;
     display: flex;
     justify-content: center;
@@ -155,57 +173,41 @@ nav a:hover{
     margin-bottom: 35px;
 }
 
-.works{
-    display: flex;
-    justify-content: center;
-}
+/*aqui termina o segundo conteudo*/
 
-.background1{
-    background-color: #eee;
-    margin-top: 24px;
-}
-
-.works2{
+.conteudoworks{
     display: flex;
     justify-content: center;
     height: 760px;
 }
 
-.container2{
+.conteudoworks__container{
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.container2 .box1 img{
+.conteudoworks__container--box1,
+.conteudoworks__container--box2{
     width: 392px;
     height: 340px;
 }
 
-.container2 .box2{
-    width: 392px;
-    height: 340px;
-}
-
-.container2 .box3{
+.conteudoworks__container--box3{
     width: 392px;
     height: 694px;
 }
 
-.container2 .box4{
+.conteudoworks__container--box4{
     width: 796px;
     height: 340px;
     position: absolute;
     margin-top: 352px;
 }
 
-.conteudo2 .box{
-    height: 242px;
-    width: 388px;
-    text-align: center;
-    margin: auto;
-}
+/*aqui termina o terceiro conteudo*/
+
 
 .services{
     display: flex;
@@ -213,46 +215,43 @@ nav a:hover{
     margin-top: 150px;
 }
 
-.container3{
+.services__container{
     width: 1170px;
     display: flex;
     justify-content: space-between;
 }
 
-.container3 .conteudo2{
+.services__conteudo{
     display: flex;
     flex-wrap: wrap;
 }
 
-.conteudo2 .box img{
+.services__conteudo--box{
+    height: 242px;
+    width: 388px;
+    text-align: center;
+    margin: auto;
+}
+
+.services__conteudo--box img{
     height: 47px;
 }
 
-.conteudo2 .box h1{
+.services__conteudo--box h1{
     font-size: 20px;
     color: #323336;
 }
 
-.conteudo2 .box p{
+.services__conteudo--box p{
     font-size: 14px;
     padding-left: 5px;
     padding-right: 5px;
     color: #323336;
 }
 
+/*aqui termina o quarto conteudo*/
+
 .modules{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.container3{
-    width: 1170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#banner2{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -262,3 +261,17 @@ nav a:hover{
     background-size: cover;
     height: 600px;
 }
+
+.modules__title1{
+
+}
+
+.modules__title2{
+    
+}
+
+.modules--button{
+    
+}
+
+
